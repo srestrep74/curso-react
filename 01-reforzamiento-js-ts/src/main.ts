@@ -1,6 +1,6 @@
 import './style.css'
 
-import './bases/11-fetch-api'
+import './bases/12-async-await'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
