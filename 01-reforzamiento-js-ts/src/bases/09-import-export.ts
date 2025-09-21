@@ -67,7 +67,7 @@ import multiplicar from "./calculadora";
 console.log(multiplicar(3, 4));
 */
 
-import { heroes, type Hero } from "./data/heroes.data"
+import { heroes, type Hero , type Owner} from "./data/heroes.data"
 
 const getHeroById = (id: number): Hero | undefined => {
     const hero = heroes.find((hero) => {
@@ -83,3 +83,18 @@ const getHeroById = (id: number): Hero | undefined => {
 };
 
 console.log(getHeroById(3));
+
+/*
+Ejercicio : 
+
+- Crear getHeroesByOwner => Hero[]
+- Filtrar heroes por su propietario
+- Recibe param por el cual filtrar (DC o Marvel) -> Del type o enum
+- Retorna un array de heroes pertenecientes al propietario
+*/
+
+const getHeroesByOwner = (owner: Owner) : Hero[] => {
+    return heroes.filter((hero) => hero.owner === owner);
+}
+
+console.log(getHeroesByOwner('DC'));

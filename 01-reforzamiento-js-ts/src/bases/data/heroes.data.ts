@@ -59,7 +59,7 @@ ReturnType<T> → obtiene el tipo de retorno de una función.
 
 */
 
-type Owner = 'DC' | 'Marvel';
+export type Owner = 'DC' | 'Marvel';
 
 /*
 Tambien se puede usar enum: 
