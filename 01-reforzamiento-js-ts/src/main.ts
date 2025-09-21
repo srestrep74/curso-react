@@ -1,6 +1,6 @@
 import './style.css'
 
-import './bases/09-import-export'
+import './bases/10-promises'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
